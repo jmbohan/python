@@ -9,7 +9,7 @@ welcome()
 # Define our function
 def calculate():
     operation = input('''
-    Please type in the math operation you  would like to complete:
+    Please type in the math operation you think you would like to complete:
     + for addition
     - for subtraction
     * for multiplication
