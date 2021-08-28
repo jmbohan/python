@@ -1,3 +1,4 @@
+#Does light edit mode effect git?
 # This is a simple calculator app
 
 def welcome():
