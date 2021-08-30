@@ -5,6 +5,7 @@
 def welcome():
     print('''
 Welcome to Calculator
+please enjoy...
 
     ''')
 welcome()
