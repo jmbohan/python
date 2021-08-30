@@ -1,7 +1,9 @@
 # Does light edit mode effect git?
+# I'm in git Bash
 # This is a simple calculator app
 # How do I get the access key to save?
-
+# Testing git gui
+# double test
 def welcome():
     print('''
 Welcome to Calculator
