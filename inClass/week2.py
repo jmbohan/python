@@ -59,3 +59,6 @@ while True:
     except:
         break
 print("You spent " + str(bill_sum) + " On bills")
+
+
+# dealing with swap files
