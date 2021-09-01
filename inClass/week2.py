@@ -14,6 +14,7 @@ else:
 ''' my code above was off by not handling the string error
     this is the professors code
 '''
+'''
 while True:
     try:
         wage = input("Please insert your hourly wage: \n")
@@ -26,3 +27,35 @@ while True:
             break
     except:
         continue
+'''
+'''
+sum = 0
+while True:
+    name = input("insert your favorite animal name: ")
+    if name == "done":
+        break
+    sum += 1
+print(sum)
+'''
+'''
+sum = 0
+for num in [3,41,12,9,7]:
+    sum = sum + num
+print(sum)
+'''
+
+bill_sum = 0
+while True:
+    usr_bills = input("How much money did you spend on bills? \nPress 'e' to exit\n")
+    try :
+        if usr_bills != 'e':
+            usr_bills = float(usr_bills)
+            if float(usr_bills):
+                bill_sum = bill_sum + usr_bills
+            else:
+                break
+        else:
+            break
+    except:
+        break
+print("You spent " + str(bill_sum) + " On bills")
