@@ -46,9 +46,9 @@ print(sum)
 
 bill_sum = 0
 while True:
-    usr_bills = input("How much money did you spend on bills? \nPress 'e' to exit\n")
+    usr_bills = input("How much money did you spend on bills? \nPress 'e' to exit or 'd' when done\n")
     try :
-        if usr_bills != 'e':
+        if usr_bills != 'e' or 'd':
             usr_bills = float(usr_bills)
             if float(usr_bills):
                 bill_sum = bill_sum + usr_bills
