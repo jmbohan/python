@@ -43,6 +43,7 @@ for num in [3,41,12,9,7]:
     sum = sum + num
 print(sum)
 '''
+'''My code 
 
 bill_sum = 0
 while True:
@@ -59,6 +60,18 @@ while True:
     except:
         break
 print("You spent " + str(bill_sum) + " On bills")
+'''
 
+# prof code 
 
-# dealing with swap files
+sum = 0
+while True:
+    try: 
+        bill = input("Insert your bill: ")
+        if bill == "quit":
+            break
+        sum += float(bill)
+    except:
+        pass
+print(sum)
+
