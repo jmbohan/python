@@ -1,3 +1,4 @@
+''' using length to calidate input
 # ask fir a six digit number and print to the console
 flag = True
 while flag == True:
@@ -11,8 +12,35 @@ while flag == True:
             else:
                 print(usr_num)
                 flag = False
-        else:
-            print("you did not enter a number")
     except:
         print("you did not enter a number")
         pass
+''' 
+'''Superficial string traversal 
+fruit = 'banana'
+index = 0
+while index < len(fruit):
+    letter = fruit[index]
+    print(index, letter)
+    index = index + 1
+fruit = 'Banana'
+for letter in fruit :
+    print(letter)
+'''
+''' counting 
+word = 'banana'
+count = 0 
+for letter in word :
+    if letter == 'a':
+        count = count + 1 
+print(count) 
+'''
+''' counting vowles in a string'''
+my_string = input("Insert a string: ")
+count = 0 
+for letter in my_string:
+    if letter in ['a', 'o', 'u', 'i', 'e']:
+        count = count + 1 
+print(count)
+
+
