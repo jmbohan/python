@@ -35,12 +35,18 @@ for letter in word :
         count = count + 1 
 print(count) 
 '''
-''' counting vowles in a string'''
+''' counting vowles in a string
 my_string = input("Insert a string: ")
 count = 0 
 for letter in my_string:
     if letter in ['a', 'o', 'u', 'i', 'e']:
         count = count + 1 
 print(count)
-
-
+'''
+''' Check for existence with keyword in
+fruit = 'orange'
+if 'g' in fruit:
+    print('Might be grapefruit!')
+elif 'o' in fruit:
+    print('Might be an orange')
+'''
