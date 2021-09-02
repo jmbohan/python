@@ -1,5 +1,5 @@
-''' using length to calidate input
-# ask fir a six digit number and print to the console
+''' using length to validate input
+# ask for a six digit number and print to the console
 flag = True
 while flag == True:
     try:
