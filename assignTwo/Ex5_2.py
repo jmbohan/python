@@ -1,10 +1,13 @@
 # Ask user to enter a number  
 usr_num = 0
 count = 0
-largest_num = -1
-smallest_num = 1024     
+largest_num = None
+smallest_num = None
 while True:
         str_num = input("Enter the number: ")
+        if largest_num is None:
+            largest_num = int(str_num) 
+            smallest_num = int(str_num)
         if str_num == 'done':
             break
         try: 
@@ -18,5 +21,4 @@ while True:
             smallest_num = int_val
         count = count + 1
         usr_num = usr_num + int_val
-
-print("Total: " + str(usr_num) + "\nCount: " + str(count) + "\nLargest #: " + str(largest_num) +  "\nSmallest: " + str(smallest_num))
+print("Total: " + str(usr_num) + "\nCount: " + str(count) + "\nLargest #: " + str(largest_num) +  "\nSmallest #: " + str(smallest_num))
