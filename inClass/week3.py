@@ -44,9 +44,27 @@ for letter in my_string:
 print(count)
 '''
 ''' Check for existence with keyword in
-fruit = 'orange'
+fruit = 'oranged
 if 'g' in fruit:
     print('Might be grapefruit!')
 elif 'o' in fruit:
-    print('Might be an orange')
+    print('Might be an oange')
 '''
+'''slice a string 
+my_string = input("Insert a string: ")
+for letter in range(len(my_string)):
+    if my_string[letter] == '@':
+        new_string = my_string[letter + 1:]
+        break
+'''
+'''slice a string pt 2'''
+my_string = input("Insert a string: ")
+for letter in range(len(my_string)):
+    if my_string[letter] == '@':
+        break
+new_string = "" 
+for letter2 in range (letter + 1, len(my_string)):
+    if my_string[letter2] == '@':
+        new_string = my_string[letter + 1: letter2]
+        break
+print(new_string)
