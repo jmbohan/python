@@ -72,5 +72,3 @@ print(lst_two)
 
 
 
-
-
