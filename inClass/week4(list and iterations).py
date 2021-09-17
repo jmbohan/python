@@ -70,11 +70,12 @@ noprimes = [j for i in range(2,8) for j in range(i*2,50,i)]
 primes = [x for x in range(2,50) if x not in noprimes]
 print(primes)
 '''
+'''
 words = 'The quick brown fox jumps over the lazy dog'.split()
 print(words)
 stuff = [[w.upper(), w.lower(), len(w)]for w in words]
 print(stuff)
-
+'''
 my_list = ['blueberry', 56, 32.1, 'fish']
 new_list = [i for i in my_list if isinstance(i,str)]
 print(new_list)
