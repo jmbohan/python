@@ -49,25 +49,35 @@ while True:
 if len(numlist):
     print(numlist,'\nThe Sum is: ', sum(numlist),'\nThe Average is: ', sum(numlist)/len(numlist))
 '''
-'''search a list '''
+'''search a list 
 lst_one = [1,2,3,'apple',5]
 lst_two = []
-for str in lst_one:
-    lst_two.append
+for index in range(len(lst_one)):
+    try:
+        int(lst_one[index])
+    except:
+        lst_two.append(lst_one[index])
 print(lst_two)
+'''
+''' 
+s = [x**2 for x in range(10)]
+v = [2**i for i in range(13)]
+m = [x for x in s if x % 2 == 0]
+print(s, v, m)
+'''
+'''
+noprimes = [j for i in range(2,8) for j in range(i*2,50,i)]
+primes = [x for x in range(2,50) if x not in noprimes]
+print(primes)
+'''
+words = 'The quick brown fox jumps over the lazy dog'.split()
+print(words)
+stuff = [[w.upper(), w.lower(), len(w)]for w in words]
+print(stuff)
 
-
-
-
-
-
-
-
-
-
-
-
-
+my_list = ['blueberry', 56, 32.1, 'fish']
+new_list = [i for i in my_list if isinstance(i,str)]
+print(new_list)
 
 
 
