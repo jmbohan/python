@@ -44,6 +44,7 @@ import operator
 sorted_d = sorted(color_dict.items(), key=operator.itemgetter(1))
 print(sorted_d)
 '''
+'''
 from pprint import pprint
 inventory = {
         'gold':500,
@@ -56,4 +57,14 @@ inventory['backpack'].sort()
 inventory['backpack'].remove('dagger')
 inventory['gold']=inventory['gold'] + 50
 
+print(inventory, "\n")
 pprint(inventory)
+'''
+# use pformat to print to a file 
+
+from pprint import pformat
+
+my_list = [1,2, ["Hi",3,"Hello"],4, [5.098998, "aeiou",9.234435325], "abcdefghijklmnopqrstuvwxyz", 10, 20.1234567899] 
+print(my_list, "\n")
+formatData = pformat(my_list)
+print(formatData)
