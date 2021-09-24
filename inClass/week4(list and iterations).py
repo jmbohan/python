@@ -76,10 +76,11 @@ print(words)
 stuff = [[w.upper(), w.lower(), len(w)]for w in words]
 print(stuff)
 '''
+'''
 my_list = ['blueberry', 56, 32.1, 'fish']
 new_list = [i for i in my_list if isinstance(i,str)]
 print(new_list)
-
+'''
 
 
 

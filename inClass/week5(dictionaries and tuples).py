@@ -27,12 +27,12 @@ while True:
     counts[words[0]] = int(words[1])
 print('Max:', max(counts.values()), 'Average:',sum(counts.values())/len(counts.keys()))
 '''
-'''
-import string
+
+""" import string
 change = str.maketrans("","", string.punctuation)
 my_str = 'Hello #() World!!!'
 print(my_str.translate(change))
-'''
+"""
 '''
 color_dict = {'red' : '#FF0000',
         'green':'#008000',
@@ -61,10 +61,11 @@ print(inventory, "\n")
 pprint(inventory)
 '''
 # use pformat to print to a file 
-
+'''
 from pprint import pformat
 
 my_list = [1,2, ["Hi",3,"Hello"],4, [5.098998, "aeiou",9.234435325], "abcdefghijklmnopqrstuvwxyz", 10, 20.1234567899] 
 print(my_list, "\n")
 formatData = pformat(my_list)
 print(formatData)
+'''

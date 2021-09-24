@@ -39,7 +39,7 @@ for row in reader:
 f.close() 
 '''
 # get a list from a csv file
-''''''
+'''
 import csv
 f = open('Pilots1.csv', 'r')
 myreader = csv.reader(f)
@@ -48,10 +48,40 @@ for row in myreader:
     lt.append(row)
 print(lt)
 f.close()
-
+'''
 # write the list to a new csv file 
+'''
 import csv
 with open('mycsv.csv', 'w') as csv_file:
     writer = csv.writer(csv_file, delimiter= ',')
     for line in lt:
         writer.writerow(line)
+'''
+'''
+import csv
+
+mylist = []
+while True:
+    name = input('Insert Fruit name: ')
+    if name == 'done': break
+    num = int(input('Insert Fruit number: '))
+    mylist.append([name,num])
+with open('names.csv', 'w') as csvfile:
+    writer = csv.writer(csvfile, csv.excel)
+    writer.writerow(["fruit", "count"])
+    for line in mylist:
+        writer.writerow(line)
+csvfile.close
+'''
+
+
+
+
+
+
+
+
+
+
+
+
