@@ -11,7 +11,7 @@ def string_rev(str1):
 print(string_rev('1234abcd'))
 '''
 '''
-# reverse with a for loop 
+# reverse with a for loop
 def string_rev(s):
     str = ''
     for i in s:
@@ -24,13 +24,13 @@ print(string_rev('1234abcd'))
 
 '''
 def string_rev(s):
-    if len(s) == 0: 
+    if len(s) == 0:
         return s
-    else: 
+    else:
         return string_rev(s[1:])+ s[0]
 print(string_rev('1234abcd'))
 '''
-# using slice 
+# using slice
 '''
 def string_rev(s):
     string = s[::-1]
@@ -53,7 +53,7 @@ def factorial(n):
 n=int(input("Input a number to compute the factiorial : "))
 print(factorial(n))
 '''
-# append to a list 
+# append to a list
 '''
 def unique_list(mylist):
     unique = []
@@ -64,7 +64,7 @@ def unique_list(mylist):
 
 print(unique_list([1,2,3,3,3,3,4,5]))
 '''
-# append to a list with idiom  
+# append to a list with idiom
 '''
 def unique_list(mylist):
     unique=[]
