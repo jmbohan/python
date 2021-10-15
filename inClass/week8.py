@@ -73,6 +73,7 @@ def unique_list(mylist):
 
 print(unique_list([1,2,3,3,3,3,4,5]))
 '''
+'''
 def perfect_number(n):
     sum = 0
     for x in range(1, n):
@@ -83,3 +84,37 @@ def perfect_number(n):
 for i in range(1,10000):
     if perfect_number(i):
         print(i)
+'''
+# PErfect number
+
+'''
+def perfect_number(n):
+    sum = 0
+    for x in range(1, n//2+1):
+        if n % x == 0:
+            sum += x
+    return sum == n
+for i in range(1,10000):
+    if perfect_number(i):
+        print(i)
+'''
+# get filename and open file 
+def readfile(filename):
+    fin = open(filename,'r')
+    mylist = []
+    for line in fin:
+        line = line.split()
+        for i in line:
+            try:
+                mylist.append(int(i))
+            except:
+                pass
+    d = dict()
+    for i in mylist:
+        d[i] = d.get(i,0) + 1
+    return d
+
+filename=input("Insert the name of the file: ")
+d = readfile(filename)
+print(d)
+
