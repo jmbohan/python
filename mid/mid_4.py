@@ -1,16 +1,19 @@
-user_input =  input("Enter a list of numbers: ")
-user_list = user_input.split(" 1 2")
+user_input =  input("Enter a list of numbers separated by whitespace: ")
+user_list = user_input.split(" ")
 
-ds = 0
-odd_list = []
-even_list = []
+negative_list = []
+positive_list = []
 
-for i in user_list:
-    if i % 2 == 0 :
-        even_list.append(i)
+for i in user_list: 
+    i = int(i)
+    if (i > 0 ) :
+        positive_list.append(i)
     elif i == 0 :
         continue
     else:
-        odd_list.append(i)
-   # ds += int(i)
-print("Even : ", even_list, 'Odd List: ', odd_list)
+        negative_list.append(i)
+#print("+ : ", positive_list, '-: ', negative_list)
+sum_positive = sum(positive_list)
+sum_negative = sum(negative_list)
+#print('Sum + : ', sum_positive, 'Sum - : ', sum_negative)
+print(sum_positive*sum_negative)
