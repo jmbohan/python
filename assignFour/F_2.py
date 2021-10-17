@@ -3,7 +3,7 @@ from pprint import pformat
 
 
 def read_csv():
-    f = open("data2.csv", 'r')
+    f = open('data2.csv', 'r')
     lt = list(list(row) for row in csv.reader(f, delimiter=','))
     for row in lt:
         for i in range(0, len(row)):
