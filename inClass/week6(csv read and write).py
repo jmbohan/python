@@ -39,7 +39,7 @@ for row in reader:
 f.close() 
 '''
 # get a list from a csv file
-'''
+
 import csv
 f = open('Pilots1.csv', 'r')
 myreader = csv.reader(f)
@@ -48,7 +48,7 @@ for row in myreader:
     lt.append(row)
 print(lt)
 f.close()
-'''
+
 # write the list to a new csv file 
 '''
 import csv
