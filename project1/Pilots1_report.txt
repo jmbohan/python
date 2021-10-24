@@ -1,0 +1,28 @@
+Test Site Report: 
+Average first name length: 6
+Average last name length: 7
+Average field test one score: 74
+Average field test two score: 67
+Average field test three score: 67
+
+Best pilot data: 
+Marietta Senn, RS:738_1344, Orange, With an average field test score of 99
+[('Aquamarine', 54),
+ ('Blue', 66),
+ ('Crimson', 54),
+ ('Fuscia', 50),
+ ('Goldenrod', 44),
+ ('Green', 56),
+ ('Indigo', 44),
+ ('Khaki', 61),
+ ('Maroon', 61),
+ ('Mauv', 35),
+ ('Orange', 57),
+ ('Pink', 47),
+ ('Puce', 54),
+ ('Purple', 51),
+ ('Red', 59),
+ ('Teal', 53),
+ ('Turquoise', 55),
+ ('Violet', 47),
+ ('Yellow', 52)]
