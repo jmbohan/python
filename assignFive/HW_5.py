@@ -21,3 +21,4 @@ finalArray = np.array(listConvert, type_spec)
 animal = finalArray['Animal']
 range_number = finalArray['Range']
 u_ind = finalArray['Unique Individuals']
+print(u_ind)

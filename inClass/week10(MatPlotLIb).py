@@ -222,7 +222,7 @@ ax.set_xticklabels(labels)
 ax.legend()
 plt.show()
 plt.savefig('plot15.png')
-'''
+# '''
 import matplotlib.pyplot as plt 
 import numpy as np 
 last_week_cups = (20, 35, 30, 35, 27) 
