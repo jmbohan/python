@@ -86,3 +86,4 @@ sns.scatterplot(
 )
 plt.show()
 print(age_plot)
+print(first_test.value_counts())
