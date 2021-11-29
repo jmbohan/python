@@ -55,11 +55,13 @@ cps = df.loc[:,'calories']
 cps = cps.reset_index().melt(id_vars='index')
 
 #plot with kind= count 
-sns.histplot(
-    data=df['calories'],
-    bins=10,
-    kde=True
+sns.distplot(
+    df['calories'],
+    hist_kws={'color':'green', 'edgecolor' : 'black', 'linewidth':2},
+    bins=10
+    
 )
+
 plt.axvline
 plt.xlabel('calories')
 plt.ylabel('Counts')
