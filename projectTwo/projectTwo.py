@@ -22,6 +22,7 @@ f.write(cereal_std.to_string())
 #print to console
 print('Cereal Means: \n{}' '\n\nCereal Standard Deviation: \n{}'.format(cereal_means,cereal_std))
 
+#max a list by selected column name and return the max value and save the name of the row 
 calories = list(df[df['calories'] == max(df['calories'])]['name'])[0]
 protein = list(df[df['protein'] == max(df['protein'])]['name'])[0]
 fat = list(df[df['fat'] == max(df['fat'])]['name'])[0]
@@ -32,3 +33,18 @@ max_cereals = str('\nCereal with the most calories: {}' '\nCereal with the most 
 print(max_cereals)
 f.write('\n\nCereal Max Values: \n')
 f.write(max_cereals)
+
+#get the mfr column
+manufactors = df.loc[:,'mfr']
+manufactors = manufactors.reset_index().melt(id_vars='index')
+
+sns.catplot(
+    x='value',
+    data=manufactors,
+    kind='count',
+)
+plt.xlabel('Manufactors')
+plt.ylabel('Counts')
+plt.title('Cereal Totals by Manufactor')
+plt.savefig('manufactors.png')
+plt.show()
