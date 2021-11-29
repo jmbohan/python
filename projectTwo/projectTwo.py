@@ -3,6 +3,32 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
+#open csv
 df = pd.read_csv('cereal.csv')
-print(df)
+#find negative values and replace will null
+df = df.replace(-1, np.NaN)
+#fill null values with mean values
+for column in ['carbo','sugars','potass']:
+   df[column] = df[column].fillna(df[column].mean())
+#apply mean method to selected columns 
+cereal_means = df.loc[:,'protein':'cups'].apply(np.mean)
+cereal_std = df.loc[:,'protein':'cups'].apply(np.std)
+#open to file and append to it 
+f = open('cereal data.txt','a+')
+f.write('Cereal means: \n')
+f.write(cereal_means.to_string())
+f.writelines('\n\nCereal Standard Deviation: \n ')
+f.write(cereal_std.to_string())
+#print to console
+print('Cereal Means: \n{}' '\n\nCereal Standard Deviation: \n{}'.format(cereal_means,cereal_std))
+
+calories = list(df[df['calories'] == max(df['calories'])]['name'])[0]
+protein = list(df[df['protein'] == max(df['protein'])]['name'])[0]
+fat = list(df[df['fat'] == max(df['fat'])]['name'])[0]
+sodium = list(df[df['sodium'] == max(df['sodium'])]['name'])[0]
+fiber = list(df[df['fiber'] == max(df['fiber'])]['name'])[0]
+max_cereals = str('\nCereal with the most calories: {}' '\nCereal with the most protein: {}' '\nCereal with the most fat: {}'
+        '\nCereal with the most sodium: {}''\nCereal with the most fiber: {}'.format(calories,protein,fat,sodium,fiber))
+print(max_cereals)
+f.write('\n\nCereal Max Values: \n')
+f.write(max_cereals)
