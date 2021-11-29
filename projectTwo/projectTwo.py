@@ -38,6 +38,7 @@ f.write(max_cereals)
 manufactors = df.loc[:,'mfr']
 manufactors = manufactors.reset_index().melt(id_vars='index')
 
+#plot with kind= count 
 sns.catplot(
     x='value',
     data=manufactors,
@@ -48,3 +49,21 @@ plt.ylabel('Counts')
 plt.title('Cereal Totals by Manufactor')
 plt.savefig('manufactors.png')
 plt.show()
+
+#plot the calories per serving with the distribution of the mean
+cps = df.loc[:,'calories']
+cps = cps.reset_index().melt(id_vars='index')
+
+#plot with kind= count 
+sns.histplot(
+    data=df['calories'],
+    bins=10,
+    kde=True
+)
+plt.axvline
+plt.xlabel('calories')
+plt.ylabel('Counts')
+plt.title('Calorie Distribution')
+plt.savefig('calories.png')
+plt.show()
+
