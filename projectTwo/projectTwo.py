@@ -1,5 +1,7 @@
+from os import name
 import pandas as pd
 import numpy as np
+from pandas.core.frame import DataFrame
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -54,10 +56,10 @@ plt.show()
 cps = df.loc[:,'calories']
 cps = cps.reset_index().melt(id_vars='index')
 
-#plot with kind= count 
-sns.distplot(
+#plot with the distribution line 
+sns.displot(
     df['calories'],
-    hist_kws={'color':'green', 'edgecolor' : 'black', 'linewidth':2},
+    kde=True,
     bins=10
     
 )
@@ -69,3 +71,20 @@ plt.title('Calorie Distribution')
 plt.savefig('calories.png')
 plt.show()
 
+#boxplot  calories per manufactor
+cb = pd.DataFrame(df.loc[:,['calories','name','mfr']])
+cb = cb.reset_index().melt(id_vars='index')
+# sns.boxplot(cb,
+# x=cb['name'],
+# y=cb['calories'],
+# hue=cb['mfr'])
+# plt.show()
+sns.set(rc={"figure.figsize":(20, 15)}) 
+sns.boxplot(x=df['name'],
+y=df['calories'],
+hue=df['mfr'],
+whis=1.5,
+fliersize=10)
+plt.xticks(rotation=-45)
+plt.savefig('mfr calories.png')
+plt.show()
