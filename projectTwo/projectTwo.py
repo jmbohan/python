@@ -74,17 +74,20 @@ plt.show()
 #boxplot  calories per manufactor
 cb = pd.DataFrame(df.loc[:,['calories','name','mfr']])
 cb = cb.reset_index().melt(id_vars='index')
-# sns.boxplot(cb,
-# x=cb['name'],
-# y=cb['calories'],
-# hue=cb['mfr'])
-# plt.show()
-sns.set(rc={"figure.figsize":(20, 15)}) 
-sns.boxplot(x=df['name'],
-y=df['calories'],
-hue=df['mfr'],
-whis=1.5,
-fliersize=10)
-plt.xticks(rotation=-45)
+# sns.boxplot(x=df['mfr'],
+# y=df['calories'],
+# hue=df['name'],
+# whis=1.5,
+# fliersize=10,
+# width=10)
+# plt.xticks(rotation=-45)
+sns.catplot(data=df, 
+x='calories',
+y='name',
+hue='mfr',
+kind='box'
+)
+sns.set(rc={"figure.figsize":(100, 50)}) 
+plt.tight_layout()
 plt.savefig('mfr calories.png')
 plt.show()
