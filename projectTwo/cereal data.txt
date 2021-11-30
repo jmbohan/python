@@ -1,0 +1,161 @@
+Cereal means: 
+protein       2.545455
+fat           1.012987
+sodium      159.675325
+fiber         2.151948
+carbo        14.802632
+sugars        7.026316
+potass       98.666667
+vitamins     28.246753
+shelf         2.207792
+weight        1.029610
+cups          0.821039
+
+Cereal Standard Deviation: 
+ protein      1.087657
+fat          0.999916
+sodium      83.286151
+fiber        2.367837
+carbo        3.856247
+sugars       4.321417
+potass      69.025373
+vitamins    22.196967
+shelf        0.827100
+weight       0.149496
+cups         0.231200
+
+Cereal Max Values: 
+
+Cereal with the most calories: Mueslix Crispy Blend
+Cereal with the most protein: Cheerios
+Cereal with the most fat: 100% Natural Bran
+Cereal with the most sodium: Product 19
+Cereal with the most fiber: All-Bran with Extra FiberCereal means: 
+protein       2.545455
+fat           1.012987
+sodium      159.675325
+fiber         2.151948
+carbo        14.802632
+sugars        7.026316
+potass       98.666667
+vitamins     28.246753
+shelf         2.207792
+weight        1.029610
+cups          0.821039
+
+Cereal Standard Deviation: 
+ protein      1.087657
+fat          0.999916
+sodium      83.286151
+fiber        2.367837
+carbo        3.856247
+sugars       4.321417
+potass      69.025373
+vitamins    22.196967
+shelf        0.827100
+weight       0.149496
+cups         0.231200
+
+Cereal Max Values: 
+
+Cereal with the most calories: Mueslix Crispy Blend
+Cereal with the most protein: Cheerios
+Cereal with the most fat: 100% Natural Bran
+Cereal with the most sodium: Product 19
+Cereal with the most fiber: All-Bran with Extra FiberCereal means: 
+protein       2.545455
+fat           1.012987
+sodium      159.675325
+fiber         2.151948
+carbo        14.802632
+sugars        7.026316
+potass       98.666667
+vitamins     28.246753
+shelf         2.207792
+weight        1.029610
+cups          0.821039
+
+Cereal Standard Deviation: 
+ protein      1.087657
+fat          0.999916
+sodium      83.286151
+fiber        2.367837
+carbo        3.856247
+sugars       4.321417
+potass      69.025373
+vitamins    22.196967
+shelf        0.827100
+weight       0.149496
+cups         0.231200
+
+Cereal Max Values: 
+
+Cereal with the most calories: Mueslix Crispy Blend
+Cereal with the most protein: Cheerios
+Cereal with the most fat: 100% Natural Bran
+Cereal with the most sodium: Product 19
+Cereal with the most fiber: All-Bran with Extra FiberCereal means: 
+protein       2.545455
+fat           1.012987
+sodium      159.675325
+fiber         2.151948
+carbo        14.802632
+sugars        7.026316
+potass       98.666667
+vitamins     28.246753
+shelf         2.207792
+weight        1.029610
+cups          0.821039
+
+Cereal Standard Deviation: 
+ protein      1.087657
+fat          0.999916
+sodium      83.286151
+fiber        2.367837
+carbo        3.856247
+sugars       4.321417
+potass      69.025373
+vitamins    22.196967
+shelf        0.827100
+weight       0.149496
+cups         0.231200
+
+Cereal Max Values: 
+
+Cereal with the most calories: Mueslix Crispy Blend
+Cereal with the most protein: Cheerios
+Cereal with the most fat: 100% Natural Bran
+Cereal with the most sodium: Product 19
+Cereal with the most fiber: All-Bran with Extra FiberCereal means: 
+protein       2.545455
+fat           1.012987
+sodium      159.675325
+fiber         2.151948
+carbo        14.802632
+sugars        7.026316
+potass       98.666667
+vitamins     28.246753
+shelf         2.207792
+weight        1.029610
+cups          0.821039
+
+Cereal Standard Deviation: 
+ protein      1.087657
+fat          0.999916
+sodium      83.286151
+fiber        2.367837
+carbo        3.856247
+sugars       4.321417
+potass      69.025373
+vitamins    22.196967
+shelf        0.827100
+weight       0.149496
+cups         0.231200
+
+Cereal Max Values: 
+
+Cereal with the most calories: Mueslix Crispy Blend
+Cereal with the most protein: Cheerios
+Cereal with the most fat: 100% Natural Bran
+Cereal with the most sodium: Product 19
+Cereal with the most fiber: All-Bran with Extra Fiber
