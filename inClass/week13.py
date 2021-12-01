@@ -2,7 +2,7 @@ from numpy import e
 import pandas as pd
 import math
 
-
+'''
 def CohenEffectSize(group1, group2):
     diff = group1.mean() - group2.mean()
     var1 = group1.var()
@@ -19,3 +19,18 @@ ser_one = pd.Series(data=one, index=['a','b','c','d','e','f'])
 ser_two = pd.Series(data=two, index=['a','b','c','d','e','f'])
 
 print(CohenEffectSize(ser_one,ser_two)) 
+'''
+
+from scipy.stats import ttest_1samp
+import numpy as np
+ages = pd.read_csv("ages.csv")
+print(ages)
+ages_mean = np.mean(ages['age'])
+print(ages_mean)
+tset, pval = ttest_1samp(ages, 30)
+
+print("p-values",pval)
+# if pval < 0.05: # alpha value is 0.05 or 5%
+#     print(" we are rejecting null hypothesis")
+# else:
+#     print("we are accepting null hypothesis")
