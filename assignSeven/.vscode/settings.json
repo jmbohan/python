@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
+        "cmap",
         "coefs",
+        "disp",
+        "Multinomial",
         "pyplot",
         "sklearn"
     ]
