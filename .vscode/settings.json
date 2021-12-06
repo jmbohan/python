@@ -1,5 +1,11 @@
 {
     "cSpell.words": [
-        "iloc"
+        "cmap",
+        "coefs",
+        "disp",
+        "iloc",
+        "Multinomial",
+        "pyplot",
+        "sklearn"
     ]
 }

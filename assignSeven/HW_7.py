@@ -43,8 +43,6 @@ print(len(mlp.coefs_))
 print(len(mlp.coefs_[0]))
 print(len(mlp.intercepts_[0]))
 
-ConfusionMatrixDisplay.from_predictions(y_test_results, predictions)
-
 
 # Naïve Bayes.
 
@@ -58,9 +56,11 @@ gnb = GaussianNB()
 mnb = MultinomialNB()
 y_pred_gnb = gnb.fit(X_train, y_train).predict(X_test)
 cnf_matrix_gnb = confusion_matrix(y_test, y_pred_gnb)
+print('Gaussian: \n', cnf_matrix_gnb)
 y_pred_mnb = mnb.fit(X_train, y_train).predict(X_test)
-cnf_matrix_mnb = confusion_matrix(y_test, y_pred_mnb) 
-disp = ConfusionMatrixDisplay.from_predictions(y_test, y_pred_mnb, cmap='Blues' )
+cnf_matrix_mnb = confusion_matrix(y_test, y_pred_mnb)
+print('Multinomial: \n',cnf_matrix_mnb)
+disp = ConfusionMatrixDisplay.from_predictions(y_test, y_pred_mnb, cmap='plasma')
 disp.ax_.set_title('Accuracy Score: {}'.format (accuracy_score(y_test, y_pred_mnb)))
 plt.show()
 print(classification_report(y_test, y_pred_mnb))
